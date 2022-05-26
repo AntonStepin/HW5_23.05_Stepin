@@ -36,6 +36,7 @@ Console.Write("Введите длину массива: ");
 int length = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите диапазон массива (массив будет от - до + вашего значения): ");
 int deviation = Convert.ToInt32(Console.ReadLine());
+if (deviation < 0) deviation = deviation * -1;
 int[] array = FillArray(length, deviation);
 PrintArray(array);
 Console.WriteLine();
